@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dummy"
+version = "0.1.0"
+description = "a dummy project with python and rust dependencies"
+authors = ["Bruno FS Ciconelle <bciconel@redhat.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cryptography = "^41.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pip-tools = "^7.3.0"
+pybuild-deps = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
